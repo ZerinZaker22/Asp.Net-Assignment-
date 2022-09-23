@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/lightbox.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <a href="~/fonts/glyphicons-halflings-regular.woff2"></a>
+    <a href="~/fonts/glyphicons-halflings-regular.woff"></a>
+    <script src="~/js/bootstrap.js"></script>
+    <script src="~/js/jquery-2.2.3.min.js"></script>
+    <script src="~/js/jquery.vide.min.js"></script>
+    <script src="~/js/lightbox-plus-jquery.min.js"></script>
+    <script type="application/x-javascript"></script>
+</head>
+<body>
+    <!-- top-nav -->
+    <div class="top-nav">
+        <div class="container">
+            <div class="navbar-header logo">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    Menu
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="menu">
+                    <ul class="nav navbar">
+                        <li>@Html.ActionLink("Home", "Index", "Home", new {@class= "nav-link"})</li>
+                        <li>@Html.ActionLink("Education", "Education", "Home", new {@class= "nav-link"})</li>
+                        <li>@Html.ActionLink("Projects", "Project", "Home", new {@class= "nav-link"})</li>
+                        <li>@Html.ActionLink("Reference", "Reference", "Home", new {@class= "nav-link"})</li>
+                    </ul>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //top-nav -->
+    <div>
+        @RenderBody()
+    </div>
+
+    
+</body>
+</html>
